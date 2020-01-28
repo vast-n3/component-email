@@ -1,0 +1,22 @@
+{
+    "name": "vast-n3/email",
+    "description": "email templating for vast-n3",
+    "minimum-stability": "dev",
+    "require": {
+        "mnsami/composer-custom-directory-installer": "1.1.*",
+        "neoan3-apps/db": "dev-master",
+        "neoan3-apps/dbexception": "dev-master",
+        "neoan3-apps/ops": "dev-master",
+        "neoan3-frame/vastn3": "dev-master"
+    },
+    "license": "GPL-3.0-only",
+    "extra": {
+        "installer-paths": {
+            "./frame/{$name}": [
+                "neoan3-frame/vastn3"
+            ],
+            "./model/{$name}": [],
+            "./component/{$name}": []
+        }
+    }
+}

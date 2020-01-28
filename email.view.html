@@ -1,0 +1,16 @@
+<div class="container">
+    <div class="w-2/3 mx-auto py-6" n-if="valid">
+        <h1 class="text-4xl">Confirmed</h1>
+        <p class="my-4">
+            Your email has been confirmed and you may now log in:
+        </p>
+        <login></login>
+        <h1 class="text-4xl" n-if="!valid">Wrong link</h1>
+    </div>
+    <div class="w-2/3 mx-auto py-6" n-if="!valid">
+        <h1 class="text-4xl">Wrong link</h1>
+        <p class="my-4">
+            Either this link has expired or was never valid.
+        </p>
+    </div>
+</div>
